@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -40,6 +43,71 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+  <style>
+      /* Popup container - can be anything you want */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 1000px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: -1800%;
+        left: 100%;
+        margin-left: -610px;
+      }
+      
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+      
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+      </style>
+  
+  
+  
+  
+  
+  
 </head>
 
 <body>
@@ -72,7 +140,55 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <p class="mb-4 pb-0">2<sup>nd</sup> Round<span></span></p>
+      <p class="mb-4 pb-0">2<sup>nd</sup> Round<span></span>
+      
+      
+      
+      
+      
+        <g class="popup" onclick="myFunction()">  . . Detail ▼
+          <span class="popuptext" id="myPopup"><br>
+
+            
+            🐱Total Supply 3,333 BestGirls<br><br>
+            
+            4th February<br>
+            First Round 1 -  First Public Sale on Knowhere.art (Terra Chain)
+            <br>1150/1150 Girls Minted / All Sold out / <br>Status: Closed ✅<br>
+            <br>
+            21th April 2022<br>
+            Migrating All the Girls(NFT) from Terra Chain to <br>ETH Network (Opensea)
+             <br>Status: Successfully Done ✅<br>
+             <br>
+            27<sup>th</sup> April 2022<br>
+            2nd Minting Round:ETH Network Welcoming : <br>Unlock only 300 BestGirls in this Round
+            Closed 30<sup>th</sup> April 2022🔥<br>
+            <br>
+            Total 1,450 Girls Unlocked<br>
+            
+            ----------------------------------------------<br>
+            
+            🕒Last Minting Round: All 3,333 Unlock<br>
+            The Detail and the Updates will be Updates Soon!</span>
+          </g>
+      
+      
+     
+      
+      
+      </p>
+
+      <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+
+
+
+
       <h1 class="mb-4 pb-0"><span>●</span> Minting</h1>
       <p class="mb-4 pb-0">27<sup>th</sup> - 30<sup>th</sup> April 2022 <span></span></p>
       <h1 class="mb-4 pb-0"><span>● LIVE</span> NOW!</h1>
