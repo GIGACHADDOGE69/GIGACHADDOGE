@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 991px) {
   #hero h1 {
-    font-size: 34px;
+    font-size: 29px;
   }
 }
 #hero p {
