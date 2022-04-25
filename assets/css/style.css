@@ -122,6 +122,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f6f7fd;
 }
 
+.section-popup {
+  width: 40%;
+  height: 65%;
+  position: fixed;
+  border-radius: 15px;
+  display: inline;
+  text-align: center;
+  left: 30%;
+  top: 20%;
+  z-index: 99;
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
