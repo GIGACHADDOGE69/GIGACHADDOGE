@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -43,71 +40,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  
-  <style>
-      /* Popup container - can be anything you want */
-      .popup {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      
-      /* The actual popup */
-      .popup .popuptext {
-        visibility: hidden;
-        width: 1000px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: -450px;
-        left: 100%;
-        margin-left: -590px;
-      }
-      
-      /* Popup arrow */
-      .popup .popuptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-      }
-      
-      /* Toggle this class - hide and show the popup */
-      .popup .show {
-        visibility: visible;
-        -webkit-animation: fadeIn 1s;
-        animation: fadeIn 1s;
-      }
-      
-      /* Add animation (fade in the popup) */
-      @-webkit-keyframes fadeIn {
-        from {opacity: 0;} 
-        to {opacity: 1;}
-      }
-      
-      @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity:1 ;}
-      }
-      </style>
-  
-  
-  
-  
-  
-  
 </head>
 
 <body>
@@ -134,84 +66,36 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <a id="connectButton" class="buy-tickets scrollto"></a>
+      <button onclick="disconnect()" style="margin: 2px; border: 0px; background-color: rgba(0, 0, 0, 0); background-size: 100%; background-image: url(LOGOUT.png); width: 28px; height: 28px; display: none;" id="disbtn"></button>
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <p class="mb-4 pb-0">2<sup>nd</sup> Round<span></span>
-      
-      
-      
-      
-      
-        <g class="popup" onclick="myFunction()">  . . Detail ▼
-          <span class="popuptext" id="myPopup" style="font-size:12px"><br>
-
-            Minting Details ▲<br><br>
-            🐱Total Supply 3,333 BestGirls<br><br>
-            
-            4th February<br>
-            First Round 1 -  First Public Sale on Knowhere.art<br>(Terra Chain)
-            <br>1150/1150 Girls Minted / All Sold out / <br>Status: Closed ✅<br>
-            <br>
-            21th April 2022<br>
-            Migrating All the Girls(NFT) from Terra Chain to <br>ETH Network (Opensea)
-             <br>Status: Successfully Done ✅<br>
-             <br>
-            27<sup>th</sup> April 2022<br>
-            2nd Minting Round:ETH Network Welcoming : <br>Unlock only 300 BestGirls in this Round
-            <br>Closed 30<sup>th</sup> April 2022🔥<br>
-            <br>
-            Total 1,450 Girls Unlocked<br>
-            
-            ----------------------------------------------<br>
-            
-            🕒Last Minting Round: All 3,333 Unlock<br>
-            The Detail and the Updates will be Updates Soon!<br><br></span>
-          </g>
-      
-      
-     
-      
-      
-      </p>
-
-      <script>
-        // When the user clicks on div, open the popup
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
-        </script>
-
-
-
-
-      <h1 class="mb-4 pb-0"><span>●</span> Minting</h1>
-      <p class="mb-4 pb-0">27<sup>th</sup> - 30<sup>th</sup> April 2022 <span></span></p>
-      <h1 class="mb-4 pb-0"><span>● LIVE</span> NOW!</h1>
-      <p class="mb-4 pb-0">☕ Buy Her a DRINK ! 🐱❤️</p>
-
+      <h1 class="mb-4 pb-0" style="font-size: 46px;"><span>●</span> Minting</h1>
+      <p class="mb-4 pb-0" style="font-size: 14px;">23<sup>th</sup> April 2022 <span></span></p>
+      <p class="mb-4 pb-0">Get Your BestGirls Now!</p>
+      <h1 class="mb-4 pb-0" style="font-size: 46px;"><span>● LIVE</span> ! </h1>
+      <p class="mb-4 pb-0" id="mintedcount" style="font-size: 14px;">Loading...</p>
       <a onclick="mintnft()" class="glightbox gift mb-4">
         <br><i class="fa fa-gift" style="font-size:48px;color:white"></i>
       </a>
       <table>
         <tr>
           <td width="50px">
-            <button onclick="amountsub()" class="mb-4 pb-0" style="border: 0px; height: 28px; width: 28px; border-radius: 360px; background-image: url(sub.png); background-size: 100%;"></button>
+            <button onclick="amountsub()" class="mb-4 pb-0" style="background-color: rgba(0, 0, 0, 0); border: 0px; height: 28px; width: 28px; border-radius: 360px; background-image: url(sub.png); background-size: 100%;"></button>
           </td>
           <td>
-            <p class="mb-4 pb-0" id="mintedinfo" style="font-size: 16px;">Loading...</p>
+            <p class="mb-4 pb-0" id="mintedinfo" style="font-size: 14px;">Loading...</p>
           </td>
           <td width="50px">
-            <button onclick="amountadd()" class="mb-4 pb-0" style="border: 0px; height: 28px; width: 28px; border-radius: 360px; background-image: url(add.png); background-size: 100%;"></button>
+            <button onclick="amountadd()" class="mb-4 pb-0" style="background-color: rgba(0, 0, 0, 0); border: 0px; height: 28px; width: 28px; border-radius: 360px; background-image: url(add.png); background-size: 100%;"></button>
           </td>
         </tr>
       </table>
 
-    <!--  <a href="#about" class="about-btn scrollto">About The Event</a> -->
+      <a href="#about" class="about-btn scrollto">About The Event</a>
     </div>
 
     <image role="button" onclick="closepopup()" id="popupimg" class="section-popup" src="assets/img/success1.jpg"></image>
@@ -236,7 +120,7 @@
           </div>
           <div class="col-lg-3">
             <h3>When</h3>
-            <p>From 27<sup>th</sup> April 2022</p>
+            <p>From 23<sup>th</sup> April 2022</p>
           </div>
         </div>
       </div>
