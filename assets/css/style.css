@@ -484,6 +484,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 80px;
   background: #db1977 ;
   border-radius: 30px;
+  padding-bottom: 130px;
   display: block;
   position: relative;
   overflow: hidden;
