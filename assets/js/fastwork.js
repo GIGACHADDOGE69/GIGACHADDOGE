@@ -80,7 +80,7 @@ async function updatemintinfo() {
 async function updatemintcount() {
     const minted = await window.NFTcontract.methods.totalSupply().call();
     const info = await window.NFTcontract.methods.roundInfo(keymintcontract).call();
-    document.getElementById('mintedcount').innerHTML = `🔥 Remaining 2<sup>th</sup> Round: ${info[1]}`;
+    document.getElementById('mintedcount').innerHTML = `🔥 Remaining this Round :  ${info[1]}`;
   
  //  document.getElementById('mintedcount').innerHTML = `🔥 : ${minted-soldoutnft} / ${info[1]}`;   //
   
