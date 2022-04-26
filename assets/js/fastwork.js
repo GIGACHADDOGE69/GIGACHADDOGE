@@ -8,9 +8,9 @@ var soldoutnft = 639;
 var mintnftamount = 1;
 
 window.onload = function () {
-  document.getElementById('connectButton').innerHTML = "Please install metamask...";
+  document.getElementById('connectButton').innerHTML = "🦊Pls install metamask...";
   if (typeof web3 != 'undefined') {
-    document.getElementById('connectButton').innerHTML = "Connect Wallet";
+    document.getElementById('connectButton').innerHTML = "💌Connect Wallet";
   }
   document.getElementById('connectButton').addEventListener('click', () => {
     load();
