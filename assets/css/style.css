@@ -123,14 +123,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-popup {
-  width: 40%;
-  height: 65%;
+  width: 100%;
   position: fixed;
   border-radius: 15px;
   display: inline;
   text-align: center;
-  left: 30%;
-  top: 20%;
+  left: 0%;
+  top: 10%;
   z-index: 99;
   display: none;
 }
